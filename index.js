@@ -41,12 +41,23 @@ $(function() {
 	var lisa = person("lisa", lisa_behaviors, lisa_moods );
 	
 	
+	var hetal_behaviors = [
+		{speak:function(mood){return "I'm "+mood;}},
+		{speak:function(mood){return "I'm sleepy.";}}
+		];
+		
+	var hetal_moods = ["happy", "sad", "energize", "cool"];
+	var hetal = new person("hetal",hetal_behaviors, hetal_moods );
+
+	
+	
 	
 	var people = [];
 	people.push(jaro);   
 	people.push(peter);
 	people.push(lisa);
 	//push your person in the people array
+	people.push(hetal);
 	
 	
 	
