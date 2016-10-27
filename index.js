@@ -15,22 +15,29 @@ $(function() {
 		{speak:function(mood){return "I'm "+mood;}},
 		{speak:function(mood){return "I'm hungry.";}}
 		];
-		
+
 	var jaro_moods = ["happy", "sleepy", "energized", "sick"];
 	var jaro = new person("jaro",jaro_behaviors, jaro_moods );
-	
-	
-	
+
+
+
 	var peter_behaviors = [
 		{speak:function(mood){return "I'm "+mood;}},
 		{speak:function(mood){return "I'm going skiing.";}},
 		{speak:function(mood){return "I like to read.";}}
-		];	
+		];
 	var peter_moods = ["grumpy", "blah", "optimistic", "voracious"];
 	var peter = new person("peter",peter_behaviors, peter_moods );
 	
 	// put your person here
-	
+    var pam_behaviors = [
+	{speak:function(mood){return "I'm "+mood;}},
+	{speak:function(mood){return "I'm hungry.";}}
+	];
+
+	var pam_moods = ["happy", "sleepy", "energized", "sick"];
+	var pam = new person("pam",pam_behaviors, pam_moods );
+
 	
 	
 	
@@ -38,6 +45,7 @@ $(function() {
 	var people = [];
 	people.push(jaro);   
 	people.push(peter);
+    people.push(pam);
 	//push your person in the people array
 	
 	
