@@ -30,14 +30,22 @@ $(function() {
 	var peter = new person("peter",peter_behaviors, peter_moods );
 	
 	// put your person here
-	
-	
+
+
+	var lisa_behaviors = [
+		{speak:function(mood){return "I'm "+mood;}},
+		{speak:function(mood){return "I'm thirsty.";}}
+	];
+	var lisa_moods = ["happy", "mad", "sad", "surprised"];
+
+	var lisa = person("lisa", lisa_behaviors, lisa_moods );
 	
 	
 	
 	var people = [];
 	people.push(jaro);   
 	people.push(peter);
+	people.push(lisa);
 	//push your person in the people array
 	
 	
