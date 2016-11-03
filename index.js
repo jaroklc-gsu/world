@@ -13,7 +13,7 @@ $(function() {
 
 	var jaro_behaviors = [
 		{speak:function(mood){return "I'm "+mood;}},
-		{speak:function(mood){return "I'm hungry.";}}
+		{speak:function(mood){return "I'm dancing!";}}
 		];
 		
 	var jaro_moods = ["happy", "sleepy", "energized", "sick"];
@@ -23,7 +23,7 @@ $(function() {
 	
 	var peter_behaviors = [
 		{speak:function(mood){return "I'm "+mood;}},
-		{speak:function(mood){return "I'm going skiing.";}},
+		{speak:function(mood){return "I'm dancing!";}},
 		{speak:function(mood){return "I like to read.";}}
 		];	
 	var peter_moods = ["grumpy", "blah", "optimistic", "voracious"];
@@ -33,7 +33,7 @@ $(function() {
     
     var christina_behaviors = [
 		{speak:function(mood){return "I'm "+mood;}},
-		{speak:function(mood){return "I'm going outside.";}},
+		{speak:function(mood){return "I'm dancing!";}},
 		{speak:function(mood){return "I like to take walks.";}}
 		];	
 	var christina_moods = ["happy", "sleepy", "dancing", "thoughtful"];
