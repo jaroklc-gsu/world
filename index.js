@@ -34,7 +34,7 @@ $(function() {
     var christina_behaviors = [
 		{speak:function(mood){return "I'm "+mood;}},
 		{speak:function(mood){return "I'm going outside.";}},
-		{speak:function(mood){return "I like to rollerblade.";}}
+		{speak:function(mood){return "I like to take walks.";}}
 		];	
 	var christina_moods = ["happy", "sleepy", "energetic", "thoughtful"];
 	var christina = new person("christina",christina_behaviors, christina_moods );
