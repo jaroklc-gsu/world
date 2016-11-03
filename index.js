@@ -36,7 +36,7 @@ $(function() {
 		{speak:function(mood){return "I'm going outside.";}},
 		{speak:function(mood){return "I like to take walks.";}}
 		];	
-	var christina_moods = ["happy", "sleepy", "energetic", "thoughtful"];
+	var christina_moods = ["happy", "sleepy", "dancing", "thoughtful"];
 	var christina = new person("christina",christina_behaviors, christina_moods );
 	
 	
