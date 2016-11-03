@@ -2,23 +2,29 @@ $(function() {
     console.log( "let's go!" );
     
     //a person has a name (string), a set of moods(aray of strings), and a set of behaviors(array of objects)
-    function person(name, behaviors, moods){
+    function person(name, behaviors, moods, dancing){
     	this.constructor.population++;
     	this.name=name;
     	this.behaviors=behaviors;
     	this.moods=moods;
     	this.current_mood = "unknown";
+        this.dancing=dancing;
+        this.current_dancing = "dancing!";
     	return this;
     }
 
-	var jaro_behaviors = [
+    var jaro_behaviors = [
 		{speak:function(mood){return "I'm "+mood;}},
 		{speak:function(mood){return "I'm dancing!";}}
 		];
 		
 	var jaro_moods = ["happy", "sleepy", "energized", "sick"];
-	var jaro = new person("jaro",jaro_behaviors, jaro_moods );
-	
+    var jaro_dancing = [
+		{speak:function(mood){return "I'm dancing1!";}},
+		{speak:function(mood){return "I'm dancing2!";}}
+		];
+	var jaro = new person("jaro",jaro_behaviors, jaro_moods, jaro_dancing );
+    
 	
 	
 	var peter_behaviors = [
@@ -27,17 +33,30 @@ $(function() {
 		{speak:function(mood){return "I like to read.";}}
 		];	
 	var peter_moods = ["grumpy", "blah", "optimistic", "voracious"];
-	var peter = new person("peter",peter_behaviors, peter_moods );
+    var peter_dancing = [
+		{speak:function(mood){return "I'm dancing1!";}},
+		{speak:function(mood){return "I'm dancing3!";}},
+		{speak:function(mood){return "I'm dancing4!";}}
+		];	
+	var peter = new person("peter",peter_behaviors, peter_moods, peter_dancing );
     
     // put your person here
     
     var christina_behaviors = [
-		{speak:function(mood){return "I'm "+mood;}},
-		{speak:function(mood){return "I'm dancing!";}},
-		{speak:function(mood){return "I like to take walks.";}}
-		];	
+		{speak:function(mood){return "I'm happy";}},
+		{speak:function(mood){return "I'm dancing";}},
+		{speak:function(mood){return "I'm walking";}}
+		];
+    var christina_dancing = [
+        
+        {speak:function(mood){return "I'm dancing5!";}},
+		{speak:function(mood){return "I'm dancing6!";}},
+		{speak:function(mood){return "I'm dancing7!";}}
+        
+    ]
 	var christina_moods = ["happy", "sleepy", "dancing", "thoughtful"];
-	var christina = new person("christina",christina_behaviors, christina_moods );
+   
+	var christina = new person("christina",christina_behaviors, christina_moods, christina_dancing );
 	
 	
 	
@@ -62,7 +81,7 @@ $(function() {
 				people.map(function(o){return '<strong>'+o.name+': </strong>'+o.current_mood});
 				$('#world_state').html(people.map(function(o){return '<strong>'+o.name+': </strong>'+o.current_mood}).join('<br />'));
 				$('#world_talk').html(people.map(function(o){return '<strong>'+o.name+': </strong>'+o.behaviors[getRandomInt(0,o.behaviors.length)].speak(o.current_mood)}).join('<br />'));
-				
+				$('#world_dance').html(people.map(function(o){return '<strong>'+o.name+': </strong>'+o.dancing[getRandomInt(0,o.dancing.length)].speak(o.current_dancing)}).join('<br />'));
 				
 	}
     
