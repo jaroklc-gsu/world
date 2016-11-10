@@ -29,7 +29,17 @@ $(function() {
 	var peter_moods = ["grumpy", "blah", "optimistic", "voracious"];
 	var peter = new person("peter",peter_behaviors, peter_moods );
 	
-	// put your person here
+	var shad = new person(
+		"Shad",
+		[
+			{speak:function(mood){return "I'm "+mood;}},
+			{speak:function(mood){return "Another virtual machine?";}},
+			{speak:function(mood){return "Almost done...";}},
+			{speak:function(mood){return "Heading out to lunch";}},
+			{speak:function(mood){return "Who's online here?";}},
+		],
+		["sleepy","confused","hungry","in the zone","distracted","focused","engrossed"]
+	);
 
 	var lisa_behaviors = [
 		{speak:function(mood){return "I'm "+mood;}},
@@ -64,8 +74,7 @@ $(function() {
 	people.push(peter);
 	people.push(lisa);
     people.push(pam);
-
-	//push your person in the people array
+	people.push(shad);
 	people.push(hetal);
 	
 	
