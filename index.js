@@ -20,12 +20,7 @@ $(function () {
     var jaro_behaviors = [
         {
             speak: function (mood) {
-                return "I'm " + mood;
-            }
-        },
-        {
-            speak: function () {
-                return "I'm hungry.";
+                return "I'm misbehaving"
             }
         }
     ];
@@ -38,17 +33,7 @@ $(function () {
     var peter_behaviors = [
         {
             speak: function (mood) {
-                return "I'm " + mood;
-            }
-        },
-        {
-            speak: function () {
-                return "I'm going skiing.";
-            }
-        },
-        {
-            speak: function () {
-                return "I like to read.";
+                return "I'm misbehaving"
             }
         }
     ];
@@ -62,11 +47,11 @@ $(function () {
 	var shad = new person(
 		"Shad",
 		[
-			{speak:function(mood){return "I'm "+mood;}},
-			{speak:function(mood){return "Another virtual machine?";}},
-			{speak:function(mood){return "Almost done...";}},
-			{speak:function(mood){return "Heading out to lunch";}},
-			{speak:function(mood){return "Who's online here?";}},
+	        {
+    	        speak: function (mood) {
+        	        return "I'm misbehaving"
+            	}
+        	}
 		],
 		["sleepy","confused","hungry","in the zone","distracted","focused","engrossed"]
 	);
@@ -76,12 +61,7 @@ $(function () {
     var lisa_behaviors = [
         {
             speak: function (mood) {
-                return "I'm " + mood;
-            }
-        },
-        {
-            speak: function () {
-                return "I'm thirsty.";
+                return "I'm misbehaving"
             }
         }
     ];
@@ -92,12 +72,7 @@ $(function () {
     var pam_behaviors = [
         {
             speak: function (mood) {
-                return "I'm " + mood;
-            }
-        },
-        {
-            speak: function () {
-                return "I'm hungry.";
+                return "I'm misbehaving"
             }
         }
     ];
@@ -110,12 +85,7 @@ $(function () {
     var hetal_behaviors = [
         {
             speak: function (mood) {
-                return "I'm " + mood;
-            }
-        },
-        {
-            speak: function () {
-                return "I'm sleepy.";
+                return "I'm misbehaving"
             }
         }
     ];
