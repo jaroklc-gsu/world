@@ -58,6 +58,20 @@ $(function () {
     // put your person here
 
 
+	
+	var shad = new person(
+		"Shad",
+		[
+			{speak:function(mood){return "I'm "+mood;}},
+			{speak:function(mood){return "Another virtual machine?";}},
+			{speak:function(mood){return "Almost done...";}},
+			{speak:function(mood){return "Heading out to lunch";}},
+			{speak:function(mood){return "Who's online here?";}},
+		],
+		["sleepy","confused","hungry","in the zone","distracted","focused","engrossed"]
+	);
+
+
     var lisa_behaviors = [
         {
             speak: function (mood) {
@@ -114,9 +128,8 @@ $(function () {
     people.push(peter);
     people.push(lisa);
     people.push(pam);
-
-    //push your person in the people array
-    people.push(hetal);
+    people.push(shad);
+	people.push(hetal);
 
 
     function setWorldState(people) {
@@ -141,6 +154,9 @@ $(function () {
 
 
     }
+
+
+	
 
     setInterval(setWorldState, 5000, people);
 
