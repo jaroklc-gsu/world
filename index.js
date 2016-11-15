@@ -70,6 +70,7 @@ $(function () {
 		],
 		["sleepy","confused","hungry","in the zone","distracted","focused","engrossed"]
 	);
+	shad.dances = [ "whip", "nay nay", "stankey leg", "line dance", "twerk" ];
 
 
     var lisa_behaviors = [
