@@ -124,6 +124,23 @@ $(function () {
     var hetal = new person("hetal", hetal_behaviors, hetal_moods);
 
 
+    var scott_behaviors = [
+        {
+            speak: function (mood) {
+                return "I'm " + mood;
+            }
+        },
+        {
+            speak: function () {
+                return "I'm hungry.";
+            }
+        }
+    ];
+
+    var scott_moods = ["caffeinated", "perky", "happy", "sniffly"];
+    var scott = new person("scott", scott_behaviors, scott_moods);
+    scott.dances = ['foxtrot', 'east coast swing', 'rumba'];
+
     var people = [];
     people.push(jaro);
     people.push(peter);
@@ -131,6 +148,7 @@ $(function () {
     people.push(pam);
     people.push(shad);
 	people.push(hetal);
+    people.push(scott);
 
 
     function setWorldState(people) {
