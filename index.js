@@ -107,7 +107,7 @@ $(function () {
     pam.dances = ['jig', 'swing'];
 
 
-    var hetal_behaviors = [
+    var jeff_behaviors = [
         {
             speak: function (mood) {
                 return "I'm " + mood;
@@ -120,8 +120,8 @@ $(function () {
         }
     ];
 
-    var hetal_moods = ["happy", "sad", "energize", "cool"];
-    var hetal = new person("hetal", hetal_behaviors, hetal_moods);
+    var jeff_moods = ["happy", "sad", "energize", "cool"];
+    var jeff = new person("jeff", jeff_behaviors, jeff_moods);
 
 
     var scott_behaviors = [
@@ -147,7 +147,7 @@ $(function () {
     people.push(lisa);
     people.push(pam);
     people.push(shad);
-	people.push(hetal);
+	people.push(jeff);
     people.push(scott);
 
 
