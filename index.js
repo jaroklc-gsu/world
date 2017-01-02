@@ -87,7 +87,7 @@ $(function () {
     ];
     var lisa_moods = ["happy", "mad", "sad", "surprised", "excited", "moody"];
 
-    var lisa = person("lisa", lisa_behaviors, lisa_moods, ['house', 'disco', 'salsa', 'swing']);
+    var lisa = person("lisa", lisa_behaviors, lisa_moods, ['house', 'disco', 'salsa', 'swing', 'polka']);
 
     var pam_behaviors = [
         {
