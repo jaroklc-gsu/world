@@ -8,7 +8,7 @@ $(function () {
         this.behaviors = behaviors;
         this.moods = moods;
         this.current_mood = "unknown";
-        this.dances = dances && typeof dances == Array ? dances : ['boogie', 'jig', 'ballet'];
+        this.dances = dances && typeof dances == Array ? dances : ['boogie', 'jig', 'ballet', 'polka'];
         this.dancing = function () {
             var num = getRandomInt(0, this.dances.length);
             return " is dancing " + this.dances[num];
