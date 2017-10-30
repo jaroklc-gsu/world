@@ -26,6 +26,7 @@ $(function () {
         {
             speak: function () {
                 return "I'm very hungry.";
+
             }
         }
     ];
